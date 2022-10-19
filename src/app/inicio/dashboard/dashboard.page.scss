@@ -1,0 +1,18 @@
+.header-md::after{
+  background-image: none !important;
+}
+
+ion-tab-button{
+  background-color: #575756;
+  color: white;
+}
+ion-tab-button[aria-selected=true] {
+  ion-icon, ion-label {
+      color: var(--ion-color-primary) !important;
+      --ion-color-base: var(--ion-color-primary) !important;
+  }
+}
+ion-tab-bar{
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}

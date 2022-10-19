@@ -1,0 +1,55 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-img style="width: 350px; height: 134px;" src="../../../assets/images/logoMyPet.png"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <span style="color: black;">
+          Login
+        </span>
+    </ion-row>
+    <ion-row>
+      <span style="font-size: 8pt;">
+        Olá, Seja Bem-vindo
+      </span>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <!-- <ion-button (ionFocus)="authService.GoogleAuth()" color="secondary" expand="block">
+          <ion-icon slot="start" name="logo-google"></ion-icon>
+          Gmail
+        </ion-button> -->
+        <ion-button (ionFocus)="rota('dashboard')" color="secondary" expand="block">
+          <ion-icon slot="start" name="logo-google"></ion-icon>
+          Gmail
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="secondary" expand="block">
+          <ion-icon slot="start" name="logo-facebook"></ion-icon>
+          Facebook
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="secondary" expand="block">
+          <ion-icon slot="start" name="logo-microsoft"></ion-icon>
+          Microsoft
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="secondary" expand="block">
+          <ion-icon slot="start" name="logo-twitter"></ion-icon>
+          Twiter
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-row>
+        <ion-col>
+          <ion-img src="../../../assets/images/logoMyPet.png"></ion-img>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="clear">
+            <ion-icon style="color: #575756;" [size]="'large'" name="add-circle"></ion-icon>
+          </ion-button>
+          <ion-button fill="clear">
+            <ion-icon style="color: #EB5665;" [size]="'large'" name="location"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="listagem">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Inicio</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="proximidade">
+      <ion-icon name="map"></ion-icon>
+      <ion-label>Proximidade</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="mensagens">
+      <ion-icon name="chatbubble-ellipses"></ion-icon>
+      <ion-label>Mensagens</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="perfil">
+      <ion-icon name="person"></ion-icon>
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
