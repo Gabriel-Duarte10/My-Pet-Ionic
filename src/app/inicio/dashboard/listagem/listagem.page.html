@@ -1,4 +1,60 @@
-
-
-<ion-title>Listagem</ion-title>
-
+<ion-content>
+  <ion-slides>
+    <ion-slide *ngFor="let item of lista">
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-thumbnail>
+              <ion-img [alt]="item.nome" [src]="item.image"></ion-img>
+            </ion-thumbnail>
+          </ion-row>
+          <ion-row style="background-color: #C6D99E; margin-top: 0px;">
+            <div style="margin: 3%; width: 100%;">
+              <ion-row>
+                <ion-text>{{item.nome}}</ion-text>
+              </ion-row>
+              <ion-row>
+                  <ion-text>Idade: {{item.nome}} | Local: {{item.nome}}</ion-text>
+              </ion-row>
+              <ion-row>
+                <ion-text>Descrição: {{item.nome}}</ion-text>
+              </ion-row>
+              <ion-row style="display: inline-flex;">
+                <ion-col>
+                  <ion-icon name="eyedrop"></ion-icon>
+                  <ion-label> Vacinado</ion-label>
+                </ion-col>
+                <ion-col>
+                  <ion-icon name="medkit"></ion-icon>
+                  <ion-label> Castrado</ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-button size="default" color="secondary">
+                    <ion-icon name="arrow-undo-outline"></ion-icon>
+                  </ion-button>
+                </ion-col>
+                <ion-col>
+                  <ion-button size="default" color="light">
+                    <ion-icon slot="icon-only" name="star"></ion-icon>
+                  </ion-button>
+                </ion-col>
+                <ion-col>
+                  <ion-button size="default" color="danger">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </ion-button>
+                </ion-col>
+                <ion-col>
+                  <ion-button size="default" color="secondary">
+                    <ion-icon name="arrow-redo-outline"></ion-icon>
+                  </ion-button>
+                </ion-col>
+              </ion-row>
+            </div>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-slide>
+</ion-slides>
+</ion-content>
